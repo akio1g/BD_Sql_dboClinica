@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.CRUDConsultaController">
+   <children>
+      <VBox layoutX="14.0" layoutY="75.0" prefHeight="319.0" prefWidth="571.0">
+         <children>
+            <HBox prefHeight="33.0" prefWidth="571.0">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <children>
+                  <Label prefWidth="116.0" text="Número do Paciente">
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ComboBox fx:id="cbNumPaciente" prefWidth="150.0">
+                     <HBox.margin>
+                        <Insets left="10.0" top="5.0" />
+                     </HBox.margin>
+                  </ComboBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="33.0" prefWidth="571.0">
+               <children>
+                  <Label prefWidth="116.0" text="Código do Médico">
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ComboBox fx:id="cbCodigoMedico" prefWidth="150.0">
+                     <HBox.margin>
+                        <Insets left="10.0" top="5.0" />
+                     </HBox.margin>
+                  </ComboBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="33.0" prefWidth="571.0">
+               <children>
+                  <Label prefWidth="116.0" text="Data">
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <DatePicker fx:id="dpData" prefHeight="25.0" prefWidth="151.0">
+                     <HBox.margin>
+                        <Insets left="10.0" top="5.0" />
+                     </HBox.margin>
+                  </DatePicker>
+                  <Label text="Hora">
+                     <HBox.margin>
+                        <Insets left="25.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="tfHora" prefHeight="25.0" prefWidth="121.0">
+                     <HBox.margin>
+                        <Insets left="10.0" top="5.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="132.0" prefWidth="571.0">
+               <children>
+                  <Label prefWidth="116.0" text="Observação">
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextArea fx:id="taObs" prefHeight="122.0" prefWidth="335.0">
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="10.0" />
+                     </padding>
+                  </TextArea>
+               </children>
+            </HBox>
+            <HBox prefHeight="33.0" prefWidth="571.0">
+               <children>
+                  <Button fx:id="btSalvar" mnemonicParsing="false" prefHeight="25.0" prefWidth="63.0" text="Salvar">
+                     <HBox.margin>
+                        <Insets left="400.0" top="20.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="btVoltar" mnemonicParsing="false" onAction="#botaoVoltar" prefHeight="25.0" prefWidth="64.0" text="Voltar">
+                     <HBox.margin>
+                        <Insets left="20.0" top="20.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</Pane>
